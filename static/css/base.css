@@ -28,6 +28,7 @@ body {
 }
 
 .func-btn {
+	-webkit-appearance: none;
     width: 50%;
     height: 50px;
     float: left;

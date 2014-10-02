@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import pprint
 from flask import (Flask, jsonify, request, abort, render_template)
 app = Flask(__name__)
 
