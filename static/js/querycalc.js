@@ -28,6 +28,34 @@ function calcListener ( jQuery ) {
         doMath (arg1, arg2, 'divide');
         e.preventDefault();
     });
+    
+    $( "#mod" ).click( function ( e ) {
+        var arg1 = $( "#argument1" ).val();
+        var arg2 = $( "#argument2" ).val();
+        doMath (arg1, arg2, 'mod');
+        e.preventDefault();
+    })
+    
+    $( "#average" ).click( function ( e ) {
+        var arg1 = $( "#argument1" ).val();
+        var arg2 = $( "#argument2" ).val();
+        doMath (arg1, arg2, 'average');
+        e.preventDefault();
+    })
+    
+    $( "#exp" ).click( function ( e ) {
+        var arg1 = $( "#argument1" ).val();
+        var arg2 = $( "#argument2" ).val();
+        doMath (arg1, arg2, 'exp');
+        e.preventDefault();
+    })
+    
+    $( "#log" ).click( function ( e ) {
+        var arg1 = $( "#argument1" ).val();
+        var arg2 = $( "#argument2" ).val();
+        doMath (arg1, arg2, 'log');
+        e.preventDefault();
+    })
 
     function doMath( arg1, arg2, resource ) {
         var textStatus, jqXHR, errorThrown = '';

@@ -90,7 +90,7 @@ def average_args():
     try:
         arg1 = request.json['argument1']
         arg2 = request.json['argument2']
-        answer = (arg1 + arg2) / 2
+        answer = (float(arg1) + float(arg2)) / 2
         return (jsonify({'answer':answer}), 200)
     except KeyError:
         abort(400)
